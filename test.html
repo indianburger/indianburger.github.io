@@ -14,6 +14,14 @@
 <blockquote class="twitter-tweet" lang="en"><p>hi third time</p>&mdash; zuzu (@zuzuAra) <a href="https://twitter.com/zuzuAra/statuses/400678966379311104">November 13, 2013</a></blockquote>
 <a class="twitter-timeline" href="https://twitter.com/indianburger" data-widget-id="369909155659657216">Tweets by @indianburger</a>
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>
+  twttr.events.bind('click', function() {
+    console.log("clicked");
+  });
+  twttr.events.bind('favorite', function() {
+    console.log("faved");
+  });
+</script>
 </body>
 </html>
